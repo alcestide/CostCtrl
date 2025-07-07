@@ -1,0 +1,19 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="container mt-5">
+    <div class="text-center">
+        <h1 class="display-4 fw-bold">Welcome to <span class="text-primary">CostCtrl</span>!</h1>
+        <p class="lead mt-3">Easily manage and track your spending with style and simplicity.</p>
+
+        <div class="d-flex justify-content-center mt-4 gap-3">
+            <a asp-controller="Home" asp-action="Expenses" class="btn btn-primary btn-lg shadow-sm">
+                💼 View Expenses
+            </a>
+            <a asp-controller="Home" asp-action="CreateEditExpense" class="btn btn-outline-secondary btn-lg shadow-sm">
+                ➕ Add New Expense
+            </a>
+        </div>
+    </div>
+</div>
